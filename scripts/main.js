@@ -29,6 +29,8 @@ function printName(){
 let storagedName = localStorage.getItem('name')
 if (!storagedName) {
 	myHeading.textContent = 'Genshin Wallpapers'
+}else if (storagedName == 'miwenji001') {
+	myHeading.textContent = 'UU IS HIS BEST LOVE'
 }else{
 	myHeading.textContent = 'Genshin Wallpapers for ' + storagedName
 }
