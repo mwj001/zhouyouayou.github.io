@@ -22,7 +22,11 @@ function printName(){
 		myHeading.textContent = 'Genshin Wallpapers'
 	}else{
 		localStorage.setItem('name', myName)
-		myHeading.textContent = 'Genshin Wallpapers for ' + myName
+		if (myName == 'miwenji001'){
+			myHeading.textContent = 'UU IS HIS BEST LOVE'
+		}else{
+			myHeading.textContent = 'Genshin Wallpapers for ' + myName
+		}
 	}
 }
 
@@ -30,7 +34,11 @@ let storagedName = localStorage.getItem('name')
 if (!storagedName) {
 	myHeading.textContent = 'Genshin Wallpapers'
 }else{
-	myHeading.textContent = 'Genshin Wallpapers for ' + storagedName
+	if (myName == 'miwenji001'){
+		myHeading.textContent = 'UUBB IS HIS BEST LOVE'
+	}else{
+		myHeading.textContent = 'Genshin Wallpapers for ' + storagedName
+	}
 }
 
 changeName.onclick = function(){
